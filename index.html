@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hussein Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/kube.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/custom.min.css' %}" />
+    <link rel="shortcut icon" href="{% static 'img/icons8-letter-h-50.png' %}" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {content: 'Husein';}
+        .progress {
+        background-color: rgb(211, 211, 211);
+        width: 70%;
+        height:20px;
+        border-radius: 10px;}
+        .skill {
+            background-color: rgb(122, 122, 122);
+            color: white;
+            width: 70%;
+            height: 20px;
+            text-align: center;
+            font-size: 11px;
+            border-radius: 10px;}
+        .html {width: 30%;}
+        .py {width: 60%;}
+        .java {width: 70%;}
+        .git {width: 50%;}
+        .DB {width: 40%;}
+	</style>
+
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">Hossein</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">About</a></li>
+				        <li><a href="#experiences">Experiences</a></li>
+				        <li><a href="#achievements">Achievements</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I’m Hossein Yadollahi</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="{% static 'img/hussein.JPG' %}" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>I’m in love with<br><span id="typed"></span></h1>
+				</div>
+				<p>
+                    I’m Hossein Yadollahi, a dedicated and enthusiastic Computer Engineering student at the University of Guilan, driven by a profound passion for technology and innovation.
+                    I possess a solid foundation in core programming languages and frameworks, with practical experience in Django, Python, and Java.
+                    My proficiency extends to essential development tools like Git,Docker and other developments tools, front-end technologies such as HTML/CSS, and I also have experience with SQL databases and basic Linux.
+                    Alongside these, I maintain a comprehensive understanding of networking principles.
+                    I’m eager to apply my growing skill set to real-world challenges, constantly seeking opportunities to learn, contribute, and excel in the dynamic field of software development.
+                </p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Work Experience -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Work<br>Experiences</h1>
+			<ul class="work-list">
+				<li>2022-2026</li>
+				<li><a>Bachelor Student in University of Guilan</a></li>
+			</ul>
+            <ul class="work-list">
+                <li>Github</li>
+                <li><a href="https://github.com/husseiny8">Here you can see some of my Projects</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Award & Achievements -->
+	<div class="award section second" id="achievements">
+        <div class="container">
+			<h1>Award &amp;<br>Achievements</h1>
+			<ul class="award-list list-flat">
+				<li>2026</li>
+				<li><a href="https://www.maktabkhooneh.org/certificates/MK-TC2TUH/">Advanced Python Programming Certification</a></li>
+			</ul>
+			<!--ul class="award-list list-flat">
+				<li>2026</li>
+				<li>
+				    #TODO: somthing
+				</li>
+			</ul-->
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical<br>Skills</h1>
+            <ul class="award-list list-flat">
+
+                <li>Python/Django</li>
+                <div class="progress">
+                    <div class="skill py">60%</div>
+                </div>
+
+                <li>SQL/Database</li>
+                <div class="progress">
+                    <div class="skill DB">40%</div>
+                </div>
+
+                <li>Git</li>
+                <div class="progress">
+                    <div class="skill git">50%</div>
+                </div>
+
+                <li>Java</li>
+                <div class="progress">
+                    <div class="skill java">70%</div>
+                </div>
+
+                <li>HTML/CSS</li>
+                <div class="progress">
+                    <div class="skill html">30%</div>
+                </div>
+                <p>
+
+                </p>
+            </ul>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>Handcrafted by Hossein in IRAN</p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><i class="fa fa-send">    husseiny.1382@gmail.com  </i></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/typed.min.js' %}"></script>
+    <script src="{% static 'js/kube.min.js' %}"></script>
+    <script src="{% static 'js/site.js' %}"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		strings: ["Coding", "Learning", "everything"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
