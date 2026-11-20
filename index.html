@@ -1,182 +1,299 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hussein Page</title>
-    <meta charset="utf-8" />
+    <title>Hussein Yadollahi | Python & AI Developer</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/kube.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/custom.min.css" />
-    <link rel="shortcut icon" href="img/icons8-letter-h-50.png" />
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<style>
-		.intro h1:before {content: 'Husein';}
+    <meta name="author" content="Hussein Yadollahi">
+    <meta name="description" content="Hussein Yadollahi — Python Developer, Backend Developer">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/kube.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.min.css">
+    <link rel="shortcut icon" href="img/icons8-letter-h-50.png">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <style>
+        .intro h1:before { content: 'Hussein'; }
+
         .progress {
-        background-color: rgb(211, 211, 211);
-        width: 70%;
-        height:12px;
-        border-radius: 12px;}
-        .skill {
-            background-color: rgb(122, 122, 122);
-            color: white;
+            background-color: rgb(211, 211, 211);
             width: 70%;
             height: 12px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .skill {
+            background-color: rgb(90, 90, 90);
+            color: white;
+            height: 12px;
             text-align: center;
-            font-size: 5px;
-            border-radius: 12px;}
-        .html {width: 30%;}
-        .py {width: 70%;}
-        .java {width: 70%;}
-        .git {width: 70%;}
-        .DB {width: 60%;}
-        .Network{width:60%;}
-	</style>
+            font-size: 0;
+            border-radius: 12px;
+        }
 
+        /* Approximate self-assessed levels; not formal proficiency scores. */
+        .python, .oop, .dsa, .git { width: 80%; }
+        .django, .sql, .mysql, .sqlite, .java, .html, .docker { width: 60%; }
+        .drf, .rest, .linux, .javascript { width: 40%; }
+        .postgresql { width: 20%; }
+
+        .project-list { margin-bottom: 28px; }
+        .project-description { margin-top: 8px; line-height: 1.8; }
+        .skill-note { font-size: 12px; opacity: .8; margin-top: 12px; }
+        .contact-list li { margin-bottom: 10px; }
+        .section-intro { line-height: 1.8; }
+    </style>
 </head>
+
 <body>
-	<!-- Navigation -->
-	<div class="main-nav">
-		<div class="container">
-			<header class="group top-nav">
-				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-				    <span class="logo">Hossein</span>
-				</div>
-			    <nav id="navbar-1" class="navbar item-nav">
-				    <ul>
-				        <li class="active"><a href="#about">About</a></li>
-				        <li><a href="#experiences">Experiences</a></li>
-				        <li><a href="#achievements">Achievements</a></li>
-				        <li><a href="#skills">Skills</a></li>
-				    </ul>
-				</nav>
-			</header>
-		</div>
-	</div>
-
-	<!-- Introduction -->
-	<div class="intro section" id="about">
-		<div class="container">
-			<p>Hi, I’m Hossein Yadollahi</p>
-			<div class="units-row units-split wrap">
-				<div class="unit-20">
-					<img src="img/hussein.JPG" alt="Avatar">
-				</div>
-				<div class="unit-80">
-					<h1>I Live in<br><span id="typed"></span></h1>
-				</div>
-				<p>
-                    I’m Hossein Yadollahi, a dedicated and enthusiastic Computer Engineering student at the University of Guilan, driven by a profound passion for technology and innovation.
-                    I possess a solid foundation in core programming languages and frameworks, with practical experience in Django, Python, and Java.
-                    My proficiency extends to essential development tools like Git,Docker and other developments tools, front-end technologies such as HTML/CSS, and I also have experience with SQL databases and basic Linux.
-                    Alongside these, I maintain a comprehensive understanding of networking principles.
-                    I’m eager to apply my growing skill set to real-world challenges, constantly seeking opportunities to learn, contribute, and excel in the dynamic field of software development.
-                </p>
-			</div>
-		</div>
-	</div>
-
-	<!-- Work Experience -->
-	<div class="work section second" id="experiences">
-		<div class="container">
-			<h1>Work<br>Experiences</h1>
-			<ul class="work-list">
-				<li>2022-2026</li>
-				<li><a>Bachelor Student in University of Guilan</a></li>
-			</ul>
-            <ul class="work-list">
-                <li>Github</li>
-                <li><a href="https://github.com/husseiny8">Here you can see some of my Projects</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- Award & Achievements -->
-	<div class="award section second" id="achievements">
+    <!-- Navigation -->
+    <div class="main-nav">
         <div class="container">
-			<h1>Award &amp;<br>Achievements</h1>
-			<ul class="award-list list-flat">
-				<li>Python</li>
-				<li><a href="https://maktabkhooneh.org/certificates/MK-TC2TUH/?lang=en">Advanced Python Programming Certification</a></li>
-			</ul>
-			<ul class="award-list list-flat">
-				<li>Git</li>
-				<li>
-				    <a href="https://maktabkhooneh.org/certificates/MK-N5QPHS/?show_actions=true&lang=en">Certificate of completion Git & GitHub</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- Technical Skills -->
-	<div class="skills section second" id="skills">
-		<div class="container">
-			<h1>Technical<br>Skills</h1>
-            <ul class="award-list list-flat">
-
-                <li>Python/Django</li>
-                <div class="progress">
-                    <div class="skill py"></div>
+            <header class="group top-nav">
+                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                    <span class="logo">Hussein</span>
                 </div>
+                <nav id="navbar-1" class="navbar item-nav">
+                    <ul>
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
 
-                <li>SQL/Database</li>
-                <div class="progress">
-                    <div class="skill DB"></div>
+    <!-- About -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <p>Hi, I'm Hussein Yadollahi</p>
+            <div class="units-row units-split wrap">
+                <div class="unit-20">
+                    <img src="img/hussein.JPG" alt="Hussein Yadollahi">
                 </div>
-
-                <li>Git</li>
-                <div class="progress">
-                    <div class="skill git"></div>
+                <div class="unit-80">
+                    <h1>I'm a<br><span id="typed"></span></h1>
                 </div>
-
-                <li>Java</li>
-                <div class="progress">
-                    <div class="skill java"></div>
-                </div>
-                
-                <li>Network</li>
-                <div class="progress">
-                    <div class="skill Network"></div>
-                </div>
-
-                <li>HTML/CSS</li>
-                <div class="progress">
-                    <div class="skill html"></div>
-                </div>
-                <p>
-
+                <p class="section-intro">
+                    I'm a Computer Engineering professional with a strong interest in
+                    backend software development, artificial intelligence, and computer
+                    vision. Python is my primary programming language, and I have
+                    hands-on experience building web applications with Django and
+                    working with Django REST Framework.
+                    <br><br>
+                    In AI and computer vision, I have practical project experience with
+                    PyTorch, CLIP, and SAM2, including GPU-based model training and
+                    experimentation. I have also worked with relational databases,
+                    Git, Docker, Linux, and networking concepts.
+                    <br><br>
+                    I enjoy turning technical ideas into working projects, investigating
+                    problems, and continuously improving my engineering skills. I'm
+                    currently open to junior and entry-level opportunities
+                    in Python/backend development and AI/computer vision.
                 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="work section second" id="projects">
+        <div class="container">
+            <h1>Selected<br>Projects</h1>
+
+            <ul class="work-list project-list">
+                <li>Deep Learning / Computer Vision</li>
+                <li>
+                    <a href="https://github.com/husseiny8/Network_Monitoring" target="_blank" rel="noopener noreferrer">
+                        FairFace — Facial Attribute Recognition
+                    </a>
+                </li>
+                <li class="project-description">
+                    Built a PyTorch-based CLIP multitask learning experiment using the
+                    FairFace dataset to predict age groups, gender, and race attributes.
+                    Worked with GPU training and tested SAM2 face-mask generation on
+                    selected sample images.
+                </li>
             </ul>
-		</div>
-	</div>
 
-	<footer>
-		<div class="container">
-			<div class="units-row">
-			    <div class="unit-50">
-			    	<p>Handcrafted by Hossein in IRAN</p>
-			    </div>
-			    <div class="unit-50">
-					<ul class="social list-flat right">
-						<li><i class="fa fa-send">    husseiny.1382@gmail.com  </i></li>
-					</ul>
-			    </div>
-			</div>
-		</div>
-	</footer>
+            <ul class="work-list project-list">
+                <li>Python / Django / Backend Development</li>
+                <li>
+                    <a href="https://github.com/husseiny8/Face_Analyzer" target="_blank" rel="noopener noreferrer">
+                        Network Monitoring System
+                    </a>
+                </li>
+                <li class="project-description">
+                    Developed a Django-based network monitoring project covering
+                    connectivity and service status, latency, packet loss, and incident
+                    tracking. Related technical work includes DNS lookups, ARP-based
+                    device discovery, and network traffic statistics.
+                </li>
+            </ul>
 
+            <ul class="work-list project-list">
+                <li>Source Code</li>
+                <li>
+                    <a href="https://github.com/husseiny8" target="_blank" rel="noopener noreferrer">
+                        Explore my GitHub repositories
+                    </a>
+                </li>
+                <li class="project-description">
+                    Visit my GitHub profile for source code, experiments, and project updates.
+                </li>
+            </ul>
+        </div>
+    </div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/typed.min.js"></script>
+    <!-- Education and Training -->
+    <div class="award section second" id="education">
+        <div class="container">
+            <h1>Education &<br>Training</h1>
+
+            <ul class="award-list list-flat">
+                <li>2022 – 2026</li>
+                <li><strong>Bachelor's Degree in Computer Engineering</strong></li>
+                <li>University of Guilan</li>
+            </ul>
+
+            <ul class="award-list list-flat">
+                <li>Additional Training</li>
+                <li>
+                    <a href="https://github.com/husseiny8/Face_Analyzer" target="_blank" rel="noopener noreferrer">
+                        Network Monitoring System
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <strong>Comprehensive Python Programming Course</strong>
+                    </a>
+                </li>
+                <li>Maktabkhooneh</li>
+            </ul>
+
+            <ul class="award-list list-flat">
+                <li>Additional Training</li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <strong>Django Web Development Course</strong>
+                </a>
+                <li>Maktabkhooneh</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Technical<br>Skills</h1>
+
+            <ul class="award-list list-flat">
+                <li><strong>Programming & Fundamentals</strong></li>
+                <li>Python</li><div class="progress"><div class="skill python"></div></div>
+                <li>Object-Oriented Programming</li><div class="progress"><div class="skill oop"></div></div>
+                <li>Data Structures & Algorithms</li><div class="progress"><div class="skill dsa"></div></div>
+                <li>Java</li><div class="progress"><div class="skill java"></div></div>
+            </ul>
+
+            <ul class="award-list list-flat">
+                <li><strong>Backend & Web Development</strong></li>
+                <li>Django</li><div class="progress"><div class="skill django"></div></div>
+                <li>Django REST Framework</li><div class="progress"><div class="skill drf"></div></div>
+                <li>REST API Development</li><div class="progress"><div class="skill rest"></div></div>
+                <li>HTML / CSS</li><div class="progress"><div class="skill html"></div></div>
+            </ul>
+
+            <ul class="award-list list-flat">
+                <li><strong>Databases</strong></li>
+                <li>SQL</li><div class="progress"><div class="skill sql"></div></div>
+                <li>MySQL</li><div class="progress"><div class="skill mysql"></div></div>
+                <li>SQLite</li><div class="progress"><div class="skill sqlite"></div></div>
+                <li>PostgreSQL</li><div class="progress"><div class="skill postgresql"></div></div>
+            </ul>
+
+            <ul class="award-list list-flat">
+                <li><strong>Tools & Other Technologies</strong></li>
+                <li>Git & GitHub</li><div class="progress"><div class="skill git"></div></div>
+                <li>Docker & Docker Compose</li><div class="progress"><div class="skill docker"></div></div>
+                <li>Linux</li><div class="progress"><div class="skill linux"></div></div>
+                <li>Computer Networking Fundamentals</li>
+            </ul>
+
+            <p class="skill-note">
+                Progress bars are approximate self-assessments, not standardized
+                proficiency measurements.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact section second" id="contact">
+        <div class="container">
+            <h1>Let's Work<br>Together</h1>
+            <p class="section-intro">
+                I'm open to junior and entry-level opportunities and
+                collaborative projects in Python development, Django backend
+                engineering, AI, and computer vision.
+            </p>
+
+            <ul class="social list-flat contact-list">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:husseiny.1382@gmail.com">husseiny.1382@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-github"></i>
+                    <a href="https://github.com/husseiny8" target="_blank" rel="noopener noreferrer">
+                        github.com/husseiny8
+                    </a>
+                </li>
+                <li><i class="fa fa-map-marker"></i> Rasht, Iran</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="units-row">
+                <div class="unit-50">
+                    <p>Designed & developed by Hussein Yadollahi</p>
+                </div>
+                <div class="unit-50">
+                    <ul class="social list-flat right">
+                        <li>
+                            <a href="mailto:husseiny.1382@gmail.com">
+                                <i class="fa fa-envelope"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
     <script src="js/kube.min.js"></script>
     <script src="js/site.js"></script>
     <script>
-		function newTyped(){}$(function(){$("#typed").typed({
-		strings: ["IRAN", "Earth", "Your Galexy","EveryWhere"],
-
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+        $(function () {
+            $("#typed").typed({
+                strings: [
+                    "Python Developer",
+                    "Backend Developer",
+                ],
+                typeSpeed: 55,
+                backDelay: 1100,
+                contentType: "html",
+                loop: true
+            });
+        });
     </script>
 </body>
 </html>
